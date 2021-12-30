@@ -5,11 +5,11 @@ From: pytorch/pytorch:1.10.0-cuda11.3-cudnn8-runtime
     apt-get update -y && apt-get install -y libgtk2.0-dev
 
     python3 -m pip --no-cache-dir install \
-    numpy==1.21.4 \
-    opencv-python==4.5.4.60 \
-    opencv-python-headless==4.5.4.60 \
-    packaging==21.3 \
-    Pillow==8.4.0 \
+    numpy \
+    opencv-python \
+    opencv-python-headless \
+    packaging \
+    Pillow \
     torchaudio \
     torchvision \
     -r requirements.txt \
