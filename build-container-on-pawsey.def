@@ -5,12 +5,30 @@ From: pytorch/pytorch:1.10.0-cuda11.3-cudnn8-runtime
     apt-get update -y && apt-get install -y libgtk2.0-dev
 
     python3 -m pip --no-cache-dir install \
-    numpy \
-    opencv-python \
-    opencv-python-headless \
-    packaging \
-    Pillow \
+    matplotlib>=3.2.2 \
+    numpy>=1.18.5 \
+    opencv-python>=4.1.2 \
+    Pillow>=7.1.2 \
+    PyYAML>=5.3.1 \
+    requests>=2.23.0 \
+    scipy>=1.4.1 \
+    torch>=1.7.0 \
+    torchvision>=0.8.1 \
+    tqdm>=4.41.0 \
+    tensorboard>=2.4.1 \
+    pandas>=1.1.4 \
+    seaborn>=0.11.0 \
+    coremltools>=4.1 \
+    onnx>=1.9.0 \
+    onnx-simplifier>=0.3.6 \
+    scikit-learn==0.19.2 \
+    tensorflow>=2.4.1 \
+    tensorflowjs>=3.9.0 \
+    openvino-dev \
+    Cython \
+    albumentations>=1.0.3 \
+    pycocotools>=2.0 \
+    roboflow \
+    thop \
     torchaudio \
     torchvision \
-    -r requirements.txt \
-    tensorboard \
