@@ -1,6 +1,6 @@
-train: images/train/images
-val:  images/valid/images
-test: images/test/images
+train: data/images/train/images
+val:  data/images/valid/images
+test: data/images/test/images
 
 nc: 17
 names: ['aluminium wrap', 'cardboard', 'cigarette', 'foil', 'general waste', 'glass', 'metal', 'negative', 'nylon bag', 'paper', 'plastic bottle', 'plastic cup', 'plastic film', 'plastic straw', 'plastic', 'styrofoam cup', 'styrofoam']
