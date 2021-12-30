@@ -3,3 +3,6 @@
 *.out
 runs/
 run/
+wandb
+*.pt
+data/data-info.yaml
