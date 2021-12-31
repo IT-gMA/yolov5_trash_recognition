@@ -16,6 +16,7 @@ module load singularity
 export SINGULARITYENV_PYTHONUSERBASE="/group/interns2021026/mdoan/user_python"
 export SINGULARITYENV_MPLCONFIGDIR="/group/interns2021026/mdoan/user_python/matplotlib"
 export SINGULARITYENV_TORCH_HOME="/group/interns2021026/mdoan/torch_home"
+export SINGULARITYENV_TORCH_HOME="/group/interns2021026/mdoan/yolov5_trash_recognition"
 
 SINGULARITYENV_CUDA=$CUDA_HOME
 time srun singularity exec --nv $MYGROUP/yolov5_trash_recognition/yolov5_run_container.sif python $MYGROUP/yolov5_trash_recognition/train.py --weights yolov5l.pt --imgsz 720 --data data/data-info.yaml --epochs 1000 --save-period 4
