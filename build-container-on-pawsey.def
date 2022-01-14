@@ -2,7 +2,7 @@ Bootstrap: docker
 From: pytorch/pytorch:1.10.0-cuda11.3-cudnn8-runtime
 
 %post
-    apt-get update -y && apt-get install -y libgtk2.0-dev && apt-get install libgl1 && apt install -y libgl1-mesa-glx
+    apt-get update -y && apt-get install ffmpeg libsm6 libxext6  -y
 
     python3 -m pip --no-cache-dir install \
     h5py==3.1.0 \
