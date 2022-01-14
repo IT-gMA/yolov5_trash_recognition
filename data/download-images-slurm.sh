@@ -8,5 +8,5 @@
 #SBATCH --export=NONE
 
 echo "downloading"
-curl -L "https://app.roboflow.com/ds/XDiW5Pncwf?key=4e2DXCWh2J" > roboflow.zip; unzip roboflow.zip; rm roboflow.zip
+curl -L "https://app.roboflow.com/ds/uKWosOgcrN?key=shBqfPBVhi" > roboflow.zip; unzip roboflow.zip; rm roboflow.zip
 mv train/ test/ valid/ images/
