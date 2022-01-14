@@ -2,14 +2,14 @@ Bootstrap: docker
 From: pytorch/pytorch:1.10.0-cuda11.3-cudnn8-runtime
 
 %post
-    apt-get update -y && apt-get install -y python3-opencv && apt install -y libgl1-mesa-glx
+    apt update && apt install -y libsm6 libxext6 ffmpeg libfontconfig1 libxrender1 libgl1-mesa-glx
 
     python3 -m pip --no-cache-dir install \
     h5py==3.1.0 \
     matplotlib==3.2.2 \
     numpy==1.19.5 \
-    opencv-python \
-    opencv-python-headless \
+    -U opencv-python \
+    opencv-python-headless==4.5.3.560 \
     Pillow==8.1.0 \
     PyYAML==6.0 \
     pyparsing==3.0.6 \
