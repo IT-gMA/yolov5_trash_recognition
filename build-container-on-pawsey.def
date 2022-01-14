@@ -2,30 +2,32 @@ Bootstrap: docker
 From: pytorch/pytorch:1.10.0-cuda11.3-cudnn8-runtime
 
 %post
-    apt-get update -y && apt-get install -y libgl1 libgl1-mesa-glx libgtk2.0-dev && apt-get install -y python-h5py
+    apt-get update -y && apt-get install -y --no-install-recommends \
+        libgl1 \
+        libglib2.0-0
 
     python3 -m pip --no-cache-dir install \
-    --upgrade pip \
-    --upgrade pip setuptools wheel \
     matplotlib==3.2.2 \
-    numpy --no-binary :all: \
+    h5py \
+    numpy \
     opencv-python \
-    Pillow==8.1.0 \
+    opencv-python-headless \
+    Pillow \
     PyYAML==6.0 \
     pyparsing==3.0.6 \
     requests==2.25.1 \
     scipy==1.4.1 \
     tqdm==4.51.0 \
-    tensorboard==2.5.0 \
-    wandb==0.12.9 \
-    pandas==1.1.5 \
+    tensorboard \
+    wandb \
+    pandas \
     seaborn==0.11.2 \
     scikit-image==0.19.0 \
     scikit-learn==1.0.1 \
     Cython \
-    albumentations==1.1.0 \
-    pycocotools --no-binary :all: \
+    albumentations \
+    pycocotools \
     thop \
-    torch==1.10.0 \
+    torch \
     torchaudio \
     torchvision \
