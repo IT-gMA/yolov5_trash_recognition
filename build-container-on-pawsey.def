@@ -2,9 +2,10 @@ Bootstrap: docker
 From: pytorch/pytorch:1.10.0-cuda11.3-cudnn8-runtime
 
 %post
-    apt-get update -y && apt-get install ffmpeg libsm6 libxext6  -y
+    apt-get update -y && apt-get install -y python3-opencv && apt install -y libgl1-mesa-glx
 
     python3 -m pip --no-cache-dir install \
+    h5py==3.1.0 \
     matplotlib==3.2.2 \
     numpy==1.19.5 \
     opencv-python==4.5.4.60 \
