@@ -5,6 +5,8 @@ From: pytorch/pytorch:1.10.0-cuda11.3-cudnn8-runtime
     apt update && apt install -y libgl1
 
     python3 -m pip --no-cache-dir install \
+    --upgrade pip \
+    --upgrade pip setuptools wheel \
     h5py==3.1.0 \
     matplotlib==3.2.2 \
     numpy==1.19.5 \
