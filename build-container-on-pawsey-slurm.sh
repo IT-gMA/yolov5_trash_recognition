@@ -6,6 +6,7 @@
 #SBATCH --tasks-per-node=1
 #SBATCH --cpus-per-task=1
 #SBTACH --account=interns2021026
+#SBATCH --output=container_build.out
 #SBATCH --export=NONE
 
 module load singularity
