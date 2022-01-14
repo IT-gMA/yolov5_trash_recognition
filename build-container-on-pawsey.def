@@ -8,6 +8,7 @@ From: pytorch/pytorch:1.10.0-cuda11.3-cudnn8-runtime
 
     python3 -m pip --no-cache-dir install \
     matplotlib==3.2.2 \
+    pycocotools \
     h5py \
     numpy \
     opencv-python \
@@ -26,7 +27,6 @@ From: pytorch/pytorch:1.10.0-cuda11.3-cudnn8-runtime
     scikit-learn==1.0.1 \
     Cython \
     albumentations \
-    pycocotools \
     thop \
     torch \
     torchaudio \
