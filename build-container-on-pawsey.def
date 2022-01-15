@@ -2,10 +2,11 @@ Bootstrap: docker
 From: pytorch/pytorch:1.10.0-cuda11.3-cudnn8-runtime
 
 %post
-    apt-get update -y && apt-get install -y libgl1 libglib2.0-0
+    apt-get update -y && apt-get install -y libgl1 libgtk2.0-dev
 
     python3 -m pip --no-cache-dir install \
     matplotlib \
+    Cython \
     pycocotools \
     h5py \
     numpy \
@@ -23,7 +24,6 @@ From: pytorch/pytorch:1.10.0-cuda11.3-cudnn8-runtime
     seaborn==0.11.2 \
     scikit-image==0.19.0 \
     scikit-learn==1.0.1 \
-    Cython \
     albumentations \
     thop \
     torch \
